@@ -37,3 +37,14 @@ Launch Ec2
 - vagrant box add dummy https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box
 - vagrant up --provider=aws
 ```
+
+### Jenkins Setup
+
+Ec2 Ip:8080
+- Cat file and Add key
+- install default plugin
+- create user to login
+
+```
+cat /var/lib/jenkins/secrets/initialAdminPassword
+```
