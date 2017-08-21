@@ -13,7 +13,7 @@ Vagrant.configure('2') do |config|
         'Owner' => 'agility'
     }
     override.ssh.username = 'ubuntu'
-    override.ssh.private_key_path = 'vagrant.pem'
+    override.ssh.private_key_path = '~/vagrant.pem'
   end
    config.vm.provision :shell, :path => "jenkinsInstall.sh"
 end
