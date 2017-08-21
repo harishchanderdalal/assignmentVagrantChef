@@ -3,17 +3,17 @@ Vagrant.configure('2') do |config|
     config.vm.provider 'aws' do |aws, override|
     aws.access_key_id = "XXXXXXXXX"
     aws.secret_access_key = "XXXXXXXXX"
-    aws.keypair_name = 'keypairname'
-    aws.instance_type = 'instancetype'
-    aws.region = 'region'
-    aws.ami = 'ami-id'
-    aws.security_groups = 'securityGroupName'
+    aws.keypair_name = 'vagrant'
+    aws.instance_type = 't2.micro'
+    aws.region = 'us-east-1'
+    aws.ami = 'ami-099fe766'
+    aws.security_groups = 'default'
     aws.tags = {
-        'Name' => 'tag',
-        'Owner' => 'owner'
+        'Name' => 'Jenkins',
+        'Owner' => 'agility'
     }
     override.ssh.username = 'ubuntu'
-    override.ssh.private_key_path = 'keypair.pem'
+    override.ssh.private_key_path = 'vagrant.pem'
   end
    config.vm.provision :shell, :path => "jenkinsInstall.sh"
 end
