@@ -1,4 +1,4 @@
-# assignmentVagrantChef
+# VagrantChef
 Vargrant Chef
 
 ## Getting Started
