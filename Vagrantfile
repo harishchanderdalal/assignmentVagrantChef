@@ -13,7 +13,7 @@ Vagrant.configure('2') do |config|
         'Owner' => 'owner'
     }
     override.ssh.username = 'ubuntu'
-    override.ssh.private_key_path = 'keypair.pem'
+    override.ssh.private_key_path = '~/keypair.pem'
   end
    config.vm.provision :shell, :path => "jenkinsInstall.sh"
 end
