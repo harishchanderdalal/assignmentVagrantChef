@@ -25,3 +25,7 @@ Vagrant file variable that need to update before vagrant up.
 | `aws.instance_type` | AWS Instance Type `Example = t2.medium` |
 | `aws.region` | AWS Region Name `Example = ap-useast-1` |
 | `aws.ami` | AWS AMI ID `Example = ami-099fe766` |
+| `aws.security_groups` | AWS Account Security Group `Example = Default` |
+| `aws.tags` | Tag as per need `Example = Foo Bar` |
+| `override.ssh.username` | AWS Ec2 Machine login Useraname `Example = ubuntu` |
+| `override.ssh.private_key_path` | AWS Account KeyPair Pem Path `Example = ~/home/vagrant.pem` |
