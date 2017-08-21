@@ -35,7 +35,7 @@ Vagrant file variable that need to update before vagrant up.
 | `aws.security_groups` | AWS Account Security Group `Example = Default` |
 | `aws.tags` | Tag as per need `Example = Foo Bar` |
 | `override.ssh.username` | AWS Ec2 Machine login Useraname `Example = ubuntu` |
-| `override.ssh.private_key_path` | AWS Account KeyPair Pem Path `Example = ~/home/vagrant.pem` |
+| `override.ssh.private_key_path` | AWS Account KeyPair Pem Path `Example = ~/home/vagrantChef/vagrant.pem` |
 
 ### Vagrant up
 
