@@ -29,3 +29,11 @@ Vagrant file variable that need to update before vagrant up.
 | `aws.tags` | Tag as per need `Example = Foo Bar` |
 | `override.ssh.username` | AWS Ec2 Machine login Useraname `Example = ubuntu` |
 | `override.ssh.private_key_path` | AWS Account KeyPair Pem Path `Example = ~/home/vagrant.pem` |
+
+### Vagrant up
+
+Launch Ec2
+```
+- vagrant box add dummy https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box
+- vagrant up --provider=aws
+```
