@@ -19,9 +19,9 @@ Vagrant file variable that need to update before vagrant up.
 
 |    Variable name          |    Description                              |
 | :------------------------ | -----------------------------------------   |
-|  `aws.access_key_id` | AWS Account access key Example = 123243sdaft34tasf3 |
-| `aws.secret_access_key` | AWS Account Secret key Example = 12232432asfesdf23423qewsf2332413sdf |
-| `aws.keypair_name` | AWS Account Keypair Name Example = vagrant |
-| `aws.instance_type` | AWS Instance Type Example = t2.medium |
-| `aws.region` | AWS Region Name Example = ap-useast-1 |
-| `aws.ami` | AWS AMI ID Example = ami-099fe766 |
+|  `aws.access_key_id` | AWS Account access key `Example = 123243sdaft34tasf3` |
+| `aws.secret_access_key` | AWS Account Secret key `Example = 12232432asfesdf23423qewsf2332413sdf` |
+| `aws.keypair_name` | AWS Account Keypair Name `Example = vagrant` |
+| `aws.instance_type` | AWS Instance Type `Example = t2.medium` |
+| `aws.region` | AWS Region Name `Example = ap-useast-1` |
+| `aws.ami` | AWS AMI ID `Example = ami-099fe766` |
