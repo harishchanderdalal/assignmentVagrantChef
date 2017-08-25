@@ -40,7 +40,9 @@ CMD to Launch Ec2, This will install jenkins while BOOT
 ### Jenkins Setup First Time
 
 URL - Machine Ip:8080
-- Key for unlock you jenkins
+- Key for unlock you jenkins, Login to Jenkins Machine and Get Key with below CMD
 ```
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
+- Use Default Plugins and then Create New admin User
+![jenkins plugins](https://user-images.githubusercontent.com/22466745/29718188-7739c2a4-89cf-11e7-8e27-227ef3883cf2.png)
