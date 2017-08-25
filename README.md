@@ -1,18 +1,10 @@
-# VagrantChef
-Vargrant Chef
-- vagrant install 
-- vagrant aws plugin
-- vagrant install ec2 with jenkins
-- jenkins pipline build spring
-
-- chef server
-
+# Vagrant Launch Ec2 BootStrap Jenkins
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This will launch Ec2 with Jenkins During Launch. you can launch Ec2 from your Local Machine Env.
 
 ### Prerequisites
-vagrant and aws plugin to install
+vagrant and aws plugin have to install in you local.
 
 vagrant Install
 ```
@@ -20,7 +12,8 @@ vagrant Install
 2. vagrant plugin aws
 ```
 
-Vagrantfile variables
+Vagrantfile variables that need to update as per need.
+
 ---------------------------------
 Vagrant file variable that need to update before vagrant up.
 
@@ -37,21 +30,17 @@ Vagrant file variable that need to update before vagrant up.
 | `override.ssh.username` | AWS Ec2 Machine login Useraname `Example = ubuntu` |
 | `override.ssh.private_key_path` | AWS Account KeyPair Pem Path `Example = ~/home/vagrantChef/vagrant.pem` |
 
-### Vagrant up
-
-Launch Ec2
+### How to Launch Ec2
+CMD to Launch Ec2, This will install jenkins while BOOT
 ```
 - vagrant box add dummy https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box
 - vagrant up --provider=aws
 ```
 
-### Jenkins Setup
+### Jenkins Setup First Time
 
-Ec2 Ip:8080
-- Cat file and Add key
-- install default plugin
-- create user to login
-
+URL - Machine Ip:8080
+- Key for unlock you jenkins
 ```
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
