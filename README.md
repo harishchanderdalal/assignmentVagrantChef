@@ -1,4 +1,4 @@
-# Vagrant Launch Ec2 BootStrap Jenkins
+# Vagrant Launch Ec2 WithJenkins
 
 ## Getting Started
 This will launch Ec2 with Jenkins During Launch. you can launch Ec2 from your Local Machine Env.
