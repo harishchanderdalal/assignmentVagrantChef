@@ -55,5 +55,3 @@ Ec2 Ip:8080
 ```
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-
-<img width="1042" alt="petclinic-screenshot" src="https://drive.google.com/file/d/0B3qUUSbGTcTWaTllMVcxcS16NVU/view">
