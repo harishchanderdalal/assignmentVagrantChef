@@ -55,3 +55,6 @@ Ec2 Ip:8080
 ```
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
+
+![jenkins plugin](https://user-images.githubusercontent.com/22466745/29712781-30ae15bc-89b9-11e7-8e6f-679ae6b3dc52.png)
+
