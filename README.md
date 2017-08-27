@@ -36,6 +36,10 @@ CMD to Launch Ec2, This will install jenkins while BOOT
 - vagrant box add dummy https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box
 - vagrant up --provider=aws
 ```
+- Start Process
+![vagrant start](https://user-images.githubusercontent.com/22466745/29747438-e612d022-8b18-11e7-87cd-3b10c237cf7e.png)
+
+- End Process
 
 ### Jenkins Setup First Time
 
