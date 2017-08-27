@@ -40,8 +40,10 @@ CMD to Launch Ec2, This will install jenkins while BOOT
 ![vagrant start](https://user-images.githubusercontent.com/22466745/29747438-e612d022-8b18-11e7-87cd-3b10c237cf7e.png)
 
 - End Process
+![vagrant end](https://user-images.githubusercontent.com/22466745/29747456-5ea2af94-8b19-11e7-8e0b-99860a5d33a0.png)
 
 ### Jenkins Setup First Time
+#### Machine IP and Unlock Key You will get from CLI Console Last
 
 URL - Machine Ip:8080
 - Key for unlock you jenkins, Login to Jenkins Machine and Get Key with below CMD
