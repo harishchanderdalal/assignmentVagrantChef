@@ -44,5 +44,9 @@ URL - Machine Ip:8080
 ```
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-- Use Default Plugins and then Create New admin User
+- Install Default Plugins
 ![jenkins plugins](https://user-images.githubusercontent.com/22466745/29718188-7739c2a4-89cf-11e7-8e27-227ef3883cf2.png)
+
+- Create New admin User
+![jenkins login](https://user-images.githubusercontent.com/22466745/29747411-60328fce-8b18-11e7-8971-b81c7ecb1376.png)
+
