@@ -10,4 +10,8 @@ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt-get update
 sudo apt-get install -y jenkins
-sudo sed -i '/%sudo   ALL=(ALL:ALL) ALL/ a jenkins ALL=(ALL) NOPASSWD:ALL' /etc/sudoers
+ip=`curl ifconfig.me`
+echo "your jenkins URL = $ip:8080"
+sleep 2m
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+suod sed -i '27 i jenkins ALL=(ALL) NOPASSWD:ALL' /etc/sudoers
