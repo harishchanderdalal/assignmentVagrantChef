@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "BEGIN"
 sudo apt-get update
 sudo apt-get install -y language-pack-en
 sudo apt-get install -y python-software-properties
@@ -15,3 +16,4 @@ echo "your jenkins URL = $ip:8080"
 sleep 2m
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 suod sed -i '27 i jenkins ALL=(ALL) NOPASSWD:ALL' /etc/sudoers
+echo "END"
