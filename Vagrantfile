@@ -8,7 +8,12 @@ Vagrant.configure('2') do |config|
     aws.instance_type = 't2.medium'
     aws.security_groups = 'agility'
     aws.keypair_name = 'agility'
-    aws.block_device_mapping = [{ 'DeviceName' => '/dev/sda1', 'Ebs.VolumeSize' => 50 }]
+    aws.block_device_mapping = [{ 
+                                    'DeviceName' => '/dev/sda1', 
+                                    'Ebs.VolumeSize' => 50,
+                                    'Ebs.VolumeType' => 'gp2',
+                                    'Ebs.DeleteOnTermination' => 'true' 
+                               }]
     aws.tags = {
         'Name' => 'Jenkins',
         'Owner' => 'agility'
