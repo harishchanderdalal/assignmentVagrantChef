@@ -3,11 +3,12 @@ Vagrant.configure('2') do |config|
     config.vm.provider 'aws' do |aws, override|
     aws.access_key_id = "XXXXXXXXX"
     aws.secret_access_key = "XXXXXXXXX"
-    aws.keypair_name = 'vagrant'
-    aws.instance_type = 't2.micro'
     aws.region = 'us-east-1'
-    aws.ami = 'ami-099fe766'
-    aws.security_groups = 'default'
+    aws.ami = 'ami-099fe766'    
+    aws.instance_type = 't2.medium'
+    aws.security_groups = 'agility'
+    aws.keypair_name = 'agility'
+    aws.block_device_mapping = [{ 'DeviceName' => '/dev/sda1', 'Ebs.VolumeSize' => 50 }]
     aws.tags = {
         'Name' => 'Jenkins',
         'Owner' => 'agility'
