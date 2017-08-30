@@ -19,13 +19,13 @@ sleep 40s
 sudo sed -i '27 i jenkins ALL=(ALL) NOPASSWD:ALL' /etc/sudoers
 
 sudo mv /vagrant/job/* /var/lib/jenkins/jobs/
-sudo chown jenkins:jenkins /var/lib/jenkins/jobs/*
+sudo chown -R jenkins:jenkins /var/lib/jenkins/jobs/*
 
 sudo mv /vagrant/config.xml /var/lib/jenkins/users/admin/
 sudo chown jenkins:jenkins /var/lib/jenkins/users/admin/config.xml
 
 sudo mv /vagrant/plugin/* /var/lib/jenkins/plugins/
-sudo chown jenkins:jenkins /var/lib/jenkins/plugins/*
+sudo chown -R jenkins:jenkins /var/lib/jenkins/plugins/*
 
 sudo service jenkins restart
 sleep 20s
